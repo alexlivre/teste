@@ -1,0 +1,466 @@
+{
+  "timestamp": "2026-03-28T08:03:57.437Z",
+  "platform": {
+    "os": "win32",
+    "arch": "x64",
+    "node": "v24.14.1"
+  },
+  "phases": [
+    {
+      "name": "Funcionalidades Básicas",
+      "tests": [
+        {
+          "id": "1.1",
+          "name": "Scanner detecta arquivos modificados",
+          "status": "PASS",
+          "duration_ms": 175,
+          "message": "OK"
+        },
+        {
+          "id": "1.2",
+          "name": "Scanner detecta arquivos novos",
+          "status": "PASS",
+          "duration_ms": 86,
+          "message": "OK"
+        },
+        {
+          "id": "1.3",
+          "name": "Commit básico",
+          "status": "PASS",
+          "duration_ms": 369,
+          "message": "OK"
+        },
+        {
+          "id": "1.4",
+          "name": "Branch: listar",
+          "status": "PASS",
+          "duration_ms": 86,
+          "message": "OK"
+        },
+        {
+          "id": "1.5",
+          "name": "Branch: criar",
+          "status": "PASS",
+          "duration_ms": 230,
+          "message": "OK"
+        },
+        {
+          "id": "1.6",
+          "name": "Tag: listar",
+          "status": "PASS",
+          "duration_ms": 81,
+          "message": "OK"
+        },
+        {
+          "id": "1.7",
+          "name": "Tag: criar",
+          "status": "PASS",
+          "duration_ms": 229,
+          "message": "OK"
+        }
+      ],
+      "summary": {
+        "total": 7,
+        "passed": 7,
+        "failed": 0
+      }
+    },
+    {
+      "name": "Multiplataforma",
+      "tests": [
+        {
+          "id": "4.1",
+          "name": "Detecção de plataforma",
+          "status": "PASS",
+          "duration_ms": 2,
+          "message": "windows"
+        },
+        {
+          "id": "4.2",
+          "name": "Detecção de Windows",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        },
+        {
+          "id": "4.3",
+          "name": "Detecção de shell",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "C:\\Windows\\system32\\cmd.exe"
+        },
+        {
+          "id": "4.4",
+          "name": "Git executable",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "git.exe"
+        },
+        {
+          "id": "4.5",
+          "name": "Normalização de paths",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "a\\b\\c"
+        },
+        {
+          "id": "4.6",
+          "name": "Escape de paths com espaços",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "\"path with spaces\""
+        },
+        {
+          "id": "4.7",
+          "name": "Home directory",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "C:\\Users\\alexb"
+        },
+        {
+          "id": "4.8",
+          "name": "Arquivo com espaços",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        },
+        {
+          "id": "4.9",
+          "name": "Git add com espaços",
+          "status": "PASS",
+          "duration_ms": 246,
+          "message": "OK"
+        },
+        {
+          "id": "4.10",
+          "name": "Path separator",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "\\"
+        },
+        {
+          "id": "4.11",
+          "name": "execGit function",
+          "status": "PASS",
+          "duration_ms": 1,
+          "message": "OK"
+        },
+        {
+          "id": "4.12",
+          "name": "execCommand function",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        }
+      ],
+      "summary": {
+        "total": 12,
+        "passed": 12,
+        "failed": 0
+      }
+    },
+    {
+      "name": "Smart Features",
+      "tests": [
+        {
+          "id": "2.1",
+          "name": "VibeVault: smartPack",
+          "status": "PASS",
+          "duration_ms": 4,
+          "message": "OK"
+        },
+        {
+          "id": "2.2",
+          "name": "VibeVault: smartUnpack",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        },
+        {
+          "id": "2.3",
+          "name": "Stealth Mode: módulo",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        },
+        {
+          "id": "2.4",
+          "name": "Smart Ignore: common_trash.json",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "32 padrões"
+        },
+        {
+          "id": "2.5",
+          "name": "Smart Ignore: módulo",
+          "status": "PASS",
+          "duration_ms": 1,
+          "message": "OK"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0
+      }
+    },
+    {
+      "name": "Segurança",
+      "tests": [
+        {
+          "id": "3.1",
+          "name": "Security: diretório existe",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        },
+        {
+          "id": "3.2",
+          "name": "Redactor: mascarar API keys",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "Redactor em outro local"
+        },
+        {
+          "id": "3.3",
+          "name": "Redactor: mascarar tokens",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "Skip"
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    },
+    {
+      "name": "Edge Cases",
+      "tests": [
+        {
+          "id": "5.1",
+          "name": "Arquivo vazio",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        },
+        {
+          "id": "5.2",
+          "name": "Arquivo binário",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        },
+        {
+          "id": "5.3",
+          "name": "Arquivo grande (1MB)",
+          "status": "PASS",
+          "duration_ms": 1,
+          "message": "1.0MB"
+        },
+        {
+          "id": "5.4",
+          "name": "Unicode/Emoji",
+          "status": "PASS",
+          "duration_ms": 1,
+          "message": "OK"
+        },
+        {
+          "id": "5.5",
+          "name": "Mensagem longa",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0
+      }
+    },
+    {
+      "name": "Stress Tests",
+      "tests": [
+        {
+          "id": "6.1",
+          "name": "Arquivos stress",
+          "status": "PASS",
+          "duration_ms": 1,
+          "message": "551 arquivos"
+        },
+        {
+          "id": "6.2",
+          "name": "Git status performance",
+          "status": "PASS",
+          "duration_ms": 75,
+          "message": "75ms"
+        },
+        {
+          "id": "6.3",
+          "name": "Memória",
+          "status": "PASS",
+          "duration_ms": 1,
+          "message": "0.2MB"
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    },
+    {
+      "name": "Flags",
+      "tests": [
+        {
+          "id": "7.1",
+          "name": "--help",
+          "status": "PASS",
+          "duration_ms": 672,
+          "message": "OK"
+        },
+        {
+          "id": "7.2",
+          "name": "--version",
+          "status": "PASS",
+          "duration_ms": 706,
+          "message": "OK"
+        },
+        {
+          "id": "7.3",
+          "name": "--no-push documentado",
+          "status": "PASS",
+          "duration_ms": 631,
+          "message": "OK"
+        },
+        {
+          "id": "7.4",
+          "name": "--yes documentado",
+          "status": "PASS",
+          "duration_ms": 577,
+          "message": "OK"
+        },
+        {
+          "id": "7.5",
+          "name": "--message documentado",
+          "status": "PASS",
+          "duration_ms": 601,
+          "message": "OK"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0
+      }
+    },
+    {
+      "name": "Internacionalização",
+      "tests": [
+        {
+          "id": "8.1",
+          "name": "Locale en.json",
+          "status": "PASS",
+          "duration_ms": 1,
+          "message": "82 traduções"
+        },
+        {
+          "id": "8.2",
+          "name": "Locale pt.json",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "82 traduções"
+        },
+        {
+          "id": "8.3",
+          "name": "i18n module",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        },
+        {
+          "id": "8.4",
+          "name": "LANGUAGE documentada",
+          "status": "PASS",
+          "duration_ms": 1,
+          "message": "OK"
+        }
+      ],
+      "summary": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0
+      }
+    },
+    {
+      "name": "Git Healer",
+      "tests": [
+        {
+          "id": "9.1",
+          "name": "Módulo healer",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        },
+        {
+          "id": "9.2",
+          "name": "healGitError",
+          "status": "PASS",
+          "duration_ms": 113,
+          "message": "OK"
+        },
+        {
+          "id": "9.3",
+          "name": "Integração AI",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    },
+    {
+      "name": "Menu Interativo",
+      "tests": [
+        {
+          "id": "10.1",
+          "name": "Comando menu",
+          "status": "PASS",
+          "duration_ms": 565,
+          "message": "OK"
+        },
+        {
+          "id": "10.2",
+          "name": "Módulo menu",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "OK"
+        },
+        {
+          "id": "10.3",
+          "name": "Opções do menu",
+          "status": "PASS",
+          "duration_ms": 0,
+          "message": "5 opções"
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    }
+  ],
+  "summary": {
+    "total": 50,
+    "passed": 50,
+    "failed": 0,
+    "success_rate": "100.0%"
+  }
+}
